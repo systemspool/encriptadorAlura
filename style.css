@@ -1,0 +1,132 @@
+
+body {
+  background-image: url(imagenes/fondo.jpg);
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  width: 940px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(228, 228, 228);
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: center;
+  -webkit-text-stroke: 2px black;
+}
+
+.lab {
+  background: #000000;
+  background: linear-gradient(to right, #000000 0%, #272928 50%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  padding: 10px;
+  margin: 15px 10px 15px 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(4,36,60);
+  background: linear-gradient(90deg, rgba(4,36,60,0.8099614845938375) 0%, rgba(150,170,180,0.908000700280112) 83%, rgba(62,97,113,0.7931547619047619) 100%);
+  border-radius: 0.5em;
+  width: 35vw;
+  height: 13vw;
+}
+
+.contenedor-botones{
+  text-align: center;
+}
+
+.btn {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background: rgb(4,36,60);
+  background: linear-gradient(90deg, rgba(4,36,60,1) 0%, rgba(20,69,93,1) 83%, rgba(13,63,85,1) 100%);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+}
+.btn:hover{
+  background: rgb(59,98,128);
+  background: linear-gradient(90deg, rgba(59,98,128,1) 0%, rgba(91,107,124,1) 59%, rgba(127,156,168,1) 100%);
+  cursor: pointer;
+  color: black;
+}
+
+.text-input{
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.3em;
+  width: 100%;
+  height: 100px;
+  background-color:#fcfcfa;
+  overflow:hidden;
+}
+
+input{
+  resize: vertical;
+}
+footer{
+  text-align: center;  
+  width: 100%;
+  height: 8%;
+  bottom: 0;
+  position:fixed;
+}
+
+.firma{
+  font-family:alegreya-light;
+  font-size:18px;
+  color: rgb(228, 228, 228);
+  font-weight: bolder;
+  padding: 1em;
+}
+
+@media screen and (max-width:480px){
+  .box{
+    height: auto;
+    width: auto;
+    margin: 10px 5px 10px 5px;
+  }
+
+  .main {
+    width: auto;
+    display: block;
+  }
+
+  footer {
+    position: unset;
+  }
+
+
+  }
+
+  @media screen and (max-width:820px) {
+    .main {
+      width: auto;
+      display: block;
+    }
+
+    .box{
+      width: auto;
+      height: auto;
+    }
+
+    .text-input{
+      padding: 0px;
+    }
+    
+  }
+

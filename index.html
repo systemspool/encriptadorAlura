@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de texto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>BIENVENIDO ANALISTA</h1>
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <label for="input-texto" class="lab"><b>Escribe tu mensaje a encriptar o desencriptar</b></label>
+        <textarea class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Analista, aqui te dejo esta herramienta para poder enviar el mensaje en clave, se muy cuidadoso con su uso y no compartas esta herramienta en quien no confies."></textarea>
+        <div class="contenedor-botones">
+          <input class="btn" type="button" value="Encriptar!" id="btn-encriptar">
+          <input class="btn" type="button" value="Desencriptar!" id="btn-desencriptar">
+          <input class="btn" type="button" value="Limpiar" id="btn-limpiar">
+        </div>
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <label for="input-texto" class="lab"><b>Mensaje Encriptado</b></label>
+      <textarea class="text-input" type="text" id="msg"></textarea>
+      <div class="contenedor-botones">
+        <input class="btn" type="button" value="Copiar" id="btn-copy">
+      </div>
+    </section>
+  </main>
+  
+  <footer>   
+    <p class="firma">&copy Copyright Jose de Jesus Anaya Mtz</p>
+       
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
